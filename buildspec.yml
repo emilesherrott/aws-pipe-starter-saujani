@@ -2,7 +2,7 @@ version: 0.2  # Required - specifies the buildspec file version
 
 
 env:
-  secrets-mananger:
+  secrets-manager:
     SECRET_USERNAME: "test:username"
     SECRET_PASSWORD: "test:password"
 phases:       # Main section where actions are divided by stage
