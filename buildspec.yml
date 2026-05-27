@@ -1,9 +1,15 @@
 version: 0.2  # Required - specifies the buildspec file version
 
+
+env:
+  secrets-mananger:
+    SECRET_USERNAME: "test:username"
+    SECRET_PASSWORD: "test:password"
 phases:       # Main section where actions are divided by stage
   build:      # Required - main commands to build your app
     commands:
       - echo "Hello Workd from Buildspec.yml"
+      - echo "$SECRET_USERNAME"
 
 artifacts:    # Optional - what files to keep and pass to the next stage
   files:
