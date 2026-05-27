@@ -8,7 +8,7 @@ env:
 phases:       # Main section where actions are divided by stage
   build:      # Required - main commands to build your app
     commands:
-      - echo "Hello Workd from Buildspec.yml"
+      - echo "Hello World from Buildspec.yml"
       - echo "$SECRET_USERNAME"
 
 artifacts:    # Optional - what files to keep and pass to the next stage
