@@ -1,0 +1,10 @@
+version: 0.2  # Required - specifies the buildspec file version
+
+phases:       # Main section where actions are divided by stage
+  build:      # Required - main commands to build your app
+    commands:
+      - echo "Hello Workd from Buildspec.yml"
+
+artifacts:    # Optional - what files to keep and pass to the next stage
+  files:
+    - Dockerfile
